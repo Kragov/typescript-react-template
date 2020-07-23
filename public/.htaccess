@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]
+
+# <FilesMatch ".(js|css)$">
+#   Header set Cache-Control "max-age=180000"
+# </FilesMatch>
